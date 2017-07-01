@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
+// Program 2.1
 	@autoreleasepool {
 //	Create an integer: i
 		int i;
@@ -22,5 +23,25 @@ int main(int argc, const char * argv[]) {
 		NSLog(@"The variable 'i' now has a value of %d", i);
 	}
 // Return 0
+//	return 0;
+	
+	
+// Program 2.2
+	@autoreleasepool {
+//	Create integer: result
+		int result;
+		result = 10 + 20;
+		NSLog(@"The sum of 10 and 20 is %i", result);
+		
+		result = 25 - 30;
+		NSLog(@"The difference between 25 and 30 is %i", result);
+		
+		result = 8 * 9;
+		NSLog(@"The product of 8 and 9 is %i", result);
+		
+		NSLog(@"The quotient of 8 and 5 is %i", (8 / 5));
+//	The same as the line above, just with one decimal
+		NSLog(@"The quotient of 8.0 and 5.0 is %.1f", (8.0 / 5.0));
+	}
 	return 0;
 }
