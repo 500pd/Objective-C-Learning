@@ -60,7 +60,7 @@ int main(int argc, const char * argv[]) {
 		if (value == 6)
 			NSLog(@"value is equal to 6");
 		else if (value == 0)
-			NSLog(@"value is equal to zero");
+			NSLog(@"value is equal to 0");
 		else if (value == 2)
 			NSLog(@"value is equal to 2");
 		else if (value == 10)
