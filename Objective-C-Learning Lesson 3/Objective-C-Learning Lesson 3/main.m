@@ -67,8 +67,8 @@ int main(int argc, const char * argv[]) {
 	//	Display the	value of myFraction
 		[myFraction showResults];
 		
-	//	Clear up memory
-		//[myFraction release];
+	//	Clear up memory (we can't use "[myFraction release];" anymore so we use "myFraction = nil;" instead
+		myFraction = nil;
 	}
 	return 0;
 }
