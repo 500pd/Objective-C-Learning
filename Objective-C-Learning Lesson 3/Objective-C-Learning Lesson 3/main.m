@@ -74,9 +74,10 @@ int main(int argc, const char * argv[]) {
 //	If only program 3.2 should be used (by using the last part of the file) comment out to here
 
 //	Program 3.2 (All of it, requires the above to be commented out)
+/*
 //	---- Interface ----
 
-/*@interface Fraction : NSObject
+@interface Fraction : NSObject
 {
 	int numerator;
 	int denominator;
@@ -126,4 +127,5 @@ int main(int argc, const char * argv[]) {
 		myFraction = nil;
 	}
 	return 0;
-}*/
+}
+*/
