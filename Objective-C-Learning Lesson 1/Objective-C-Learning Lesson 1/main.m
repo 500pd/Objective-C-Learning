@@ -2,8 +2,8 @@
 //  main.m
 //  Hello World
 //
-//  Created by Peter András Adorján Dyhr on 01/07/2017.
-//  Copyright © 2017 Peter András Adorján Dyhr. All rights reserved.
+//  Created by Peter Dyhr on 01/07/2017.
+//  Copyright © 2017 Peter Dyhr. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
