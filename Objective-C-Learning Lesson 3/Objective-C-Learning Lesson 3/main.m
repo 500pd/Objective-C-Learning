@@ -29,7 +29,7 @@
 @implementation Fraction
 
 - (void)showResults {
-	NSLog(@"This is a fraction with a value of %d/%d", numerator, denominator);
+	NSLog(@"Program 3.2:\nThis is a fraction with a value of %d/%d", numerator, denominator);
 }
 
 - (void)setNumerator:(int)n {
@@ -48,7 +48,7 @@ int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		int numerator = 2;
 		int denominator = 5;
-		NSLog(@"This is a fraction with a value of %d/%d", numerator, denominator);
+		NSLog(@"Program 3.1:\nThis is a fraction with a value of %d/%d", numerator, denominator);
 	}
 	
 	//	Program 3.2 'main' part
