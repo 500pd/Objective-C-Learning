@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+//	If only program 3.2 should be used (by using the last part of the file) comment out from here
 //	Program 3.2 Stuff
 //	---- Interface ----
 
@@ -40,6 +41,7 @@
 }
 
 @end
+//	End of program 3.2 stuff
 
 int main(int argc, const char * argv[]) {
 	//	Program 3.1
@@ -48,6 +50,7 @@ int main(int argc, const char * argv[]) {
 		int denominator = 5;
 		NSLog(@"This is a fraction with a value of %d/%d", numerator, denominator);
 	}
+	
 	//	Program 3.2 'main' part
 	@autoreleasepool {
 		//	Create an instance of Fraction
@@ -68,6 +71,7 @@ int main(int argc, const char * argv[]) {
 
 	return 0;
 }
+//	If only program 3.2 should be used (by using the last part of the file) comment out to here
 
 //	Program 3.2 (All of it, requires the above to be commented out)
 //	---- Interface ----
