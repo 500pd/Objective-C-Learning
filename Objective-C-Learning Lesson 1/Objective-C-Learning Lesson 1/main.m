@@ -15,9 +15,11 @@ int main(int argc, const char * argv[]) {
 	}
 	
 	//	Ifølge guiden virker dette. Det er dog uddateret, og Xcodes egen måde ovenfor er den, der virker
-	/*	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	 NSLog(@"Hello, World!");
-	 [pool drain];*/
+	/*
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+		NSLog(@"Hello, World!");
+	[pool drain];
+	*/
 
 	return 0;
 }
