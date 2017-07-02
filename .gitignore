@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/swift,xcode,objective-c,osx
+# Created by https://www.gitignore.io/api/xcode,objective-c,osx
 
 ### Objective-C ###
 # Xcode
@@ -19,8 +19,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-#xcuserdata/
-*.xcuserdatad/
+xcuserdata/
 
 ## Other
 *.moved-aside
@@ -59,14 +58,6 @@ iOSInjectionProject/
 
 ### Objective-C Patch ###
 
-### Objective-C.Carthage Stack ###
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build
-
 ### Objective-C.CocoaPods Stack ###
 ## CocoaPods GitIgnore Template
 
@@ -74,6 +65,14 @@ Carthage/Build
 #           - Also handy if you have a lage number of dependant pods
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGONRE THE LOCK FILE
 Pods/
+
+### Objective-C.Carthage Stack ###
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
 
 ### OSX ###
 *.DS_Store
@@ -102,56 +101,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Swift ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-
-## Various settings
-
-## Other
-
-## Obj-C/Swift specific
-
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
-
-# Swift Package Manager
-#
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-.build/
-
-# CocoaPods - Refactored to standalone file
-
-# Carthage - Refactored to standalone file
-
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
-
-### Swift.Carthage Stack ###
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-
-### Swift.CocoaPods Stack ###
-## CocoaPods GitIgnore Template
-
-# CocoaPods - Only use to conserve bandwidth / Save time on Pushing
-#           - Also handy if you have a lage number of dependant pods
-#           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGONRE THE LOCK FILE
-
 ### Xcode ###
 # Xcode
 #
@@ -170,4 +119,4 @@ playground.xcworkspace
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-# End of https://www.gitignore.io/api/swift,xcode,objective-c,osx
+# End of https://www.gitignore.io/api/xcode,objective-c,osx
