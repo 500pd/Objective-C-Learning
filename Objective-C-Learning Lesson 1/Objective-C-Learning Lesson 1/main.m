@@ -10,8 +10,8 @@
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-		// insert code here...
 		NSLog(@"Hello, World!");
+		NSLog(@"I'm ready to program in Objective-C!");
 	}
 	
 	//	Ifølge guiden virker dette. Det er dog uddateret, og Xcodes egen måde ovenfor er den, der virker
