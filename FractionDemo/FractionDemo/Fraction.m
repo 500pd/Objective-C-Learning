@@ -62,7 +62,9 @@
 }
 
 + (Fraction *)addFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2 {
-	Fraction *result = [[Fraction alloc] init];
+	Fraction *result = [[Fraction alloc] init];	//	Store result of addition
+												//	Autorelease is memory management –
+												//	Don't worry about it now. (It doesn't work like that any longer, sooo...)
 	
 	NSInteger resultNum = frac1.numerator * frac2.denominator + frac1.denominator * frac2.numerator;
 	NSInteger resultDenom = frac1.denominator * frac2.denominator;
