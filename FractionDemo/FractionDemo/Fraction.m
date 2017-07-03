@@ -61,4 +61,16 @@
 	self.denominator /= u;
 }
 
++ (Fraction *)addFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2 {
+	Fraction *result = [[Fraction alloc] init];
+	
+	NSInteger resultNum = frac1.numerator * frac2.denominator + frac1.denominator * frac2.numerator;
+	NSInteger resultDenom = frac1.denominator * frac2.denominator;
+	
+	[result setNumerator:resultNum overDenominator:resultDenom];
+	[result reduce];
+	
+	return result;
+}
+
 @end

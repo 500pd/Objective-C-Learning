@@ -46,5 +46,16 @@ int main (int argc, const char * argv[]) {
 //		[aFraction reduce];	//	This is now unnecessary as it gets done automatically
 		[aFraction display];
 	}
+	@autoreleasepool {
+		NSLog(@"\n");
+		Fraction *aFraction = [[Fraction alloc] init];
+		Fraction *bFraction = [[Fraction alloc] init];
+		[aFraction setNumerator:2 overDenominator:4];
+		[bFraction setNumerator:1 overDenominator:3];
+		
+		NSLog(@"Using class method:");
+		Fraction *classAddition = [Fraction addFraction:aFraction toFraction:bFraction];
+		[classAddition display];
+	}
 	return 0;
 }

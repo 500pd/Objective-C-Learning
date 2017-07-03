@@ -31,4 +31,6 @@
 
 - (void)reduce;
 
++ (Fraction *)addFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2;
+
 @end
