@@ -11,7 +11,8 @@
 int main(int argc, const char * argv[]) {
 	
 	@autoreleasepool {
-		int sum = 0;	//	Make ssure we start at zero, to avoid issues later
+	//	for() loop
+		int sum = 0;	//	Make sure we start at zero, to avoid issues later
 		
 		//	Allow user input
 		NSLog(@"Please enter a value.");
@@ -24,6 +25,20 @@ int main(int argc, const char * argv[]) {
 		}
 		NSLog(@"Sum of all values from 1 to %d is %d", times, sum);
 	    NSLog(@"Have a great day 😀");
+	}
+	@autoreleasepool {
+	//	while() loop
+		NSLog(@"Input a list of integers. Hit Return after each one. End the list with a negative value.");
+		int sum = 0;
+		int input = 0;
+		scanf("%d", &input);
+		
+		while (input >= 0) {
+			sum = sum + input;
+			scanf("%d", &input);
+		}
+		
+		NSLog(@"The sum of all those values is %d", sum);
 	}
 	return 0;
 }
