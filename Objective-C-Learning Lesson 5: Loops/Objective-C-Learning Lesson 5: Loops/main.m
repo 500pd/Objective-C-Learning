@@ -33,12 +33,22 @@ int main(int argc, const char * argv[]) {
 		int input = 0;
 		scanf("%d", &input);
 		
-		while (input >= 0) {
+		while (input >= 0) {	//	"Greater-than or equal to zero" is the same as "not negative"
 			sum = sum + input;
 			scanf("%d", &input);
 		}
 		
 		NSLog(@"The sum of all those values is %d", sum);
+	}
+	@autoreleasepool {
+	//	do-while loop
+		int sum = 0;
+		int input = 0;
+		do {
+			sum = sum + input;
+			NSLog(@"Sum is %d", sum);
+			scanf("%d", &input);
+		} while (input != -1);
 	}
 	return 0;
 }
