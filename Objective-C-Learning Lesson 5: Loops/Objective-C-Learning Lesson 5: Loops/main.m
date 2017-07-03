@@ -15,15 +15,15 @@ int main(int argc, const char * argv[]) {
 		
 		//	Allow user input
 		NSLog(@"Please enter a value.");
-		int times;
-		scanf("%d", &times);
+		int times;	//	We could add it at the same time as 'sum' by writing 'int sum = 0, times;'
+		scanf("%d", &times);	//	The ambersand is used to initialize the integer
 		
 		//	for() loop construct:
 		for (int n = 1; n <= times; n = n + 1) {
 			sum = sum + n;
 		}
 		NSLog(@"Sum of all values from 1 to %d is %d", times, sum);
-	    NSLog(@"Hello, World!");
+	    NSLog(@"Have a great day 😀");
 	}
 	return 0;
 }
