@@ -29,4 +29,6 @@
 
 - (void)add:(Fraction *)newFraction;
 
+- (void)reduce;
+
 @end

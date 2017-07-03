@@ -34,6 +34,7 @@ int main (int argc, const char * argv[]) {
 		myFraction = nil;
 	}
 	@autoreleasepool {
+		NSLog(@"\n");
 		Fraction *aFraction = [[Fraction alloc] init];
 		Fraction *bFraction = [[Fraction alloc] init];
 		
@@ -42,6 +43,7 @@ int main (int argc, const char * argv[]) {
 		
 		[aFraction display]; NSLog(@" + "); [bFraction display]; NSLog(@" = ");
 		[aFraction add:bFraction];
+		[aFraction reduce];
 		[aFraction display];
 	}
 	return 0;
