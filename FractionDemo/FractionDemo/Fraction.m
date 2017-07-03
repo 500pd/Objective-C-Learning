@@ -30,4 +30,15 @@
 //	numeratorString = nil;
 }
 
+- (void)setNumerator:(NSInteger)num overDenominator:(NSInteger)denom {
+	self.numerator = num;
+	self.denominator = denom;
+}
+
+- (void)add:(Fraction *)newFraction {
+	// a/b + c/d = ((a * d) + (b * c)) / (b * d)
+	self.numerator = self.numerator * newFraction.denominator + self.denominator * newFraction.numerator;
+	self.denominator = self.denominator * newFraction.denominator;
+}
+
 @end
