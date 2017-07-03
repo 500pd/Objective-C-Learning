@@ -43,7 +43,7 @@ int main (int argc, const char * argv[]) {
 		
 		[aFraction display]; NSLog(@" + "); [bFraction display]; NSLog(@" = ");
 		[aFraction add:bFraction];
-		[aFraction reduce];
+//		[aFraction reduce];	//	This is now unnecessary as it gets done automatically
 		[aFraction display];
 	}
 	return 0;

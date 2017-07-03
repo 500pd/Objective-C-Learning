@@ -39,6 +39,8 @@
 	// a/b + c/d = ((a * d) + (b * c)) / (b * d)
 	self.numerator = self.numerator * newFraction.denominator + self.denominator * newFraction.numerator;
 	self.denominator = self.denominator * newFraction.denominator;
+	
+	[self reduce];
 }
 
 - (void)reduce {
