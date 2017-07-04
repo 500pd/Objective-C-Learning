@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
+#import "MixedNumber.h"
 
 int main (int argc, const char * argv[]) {
+	/* ======================== FRACTION ======================== */
 	@autoreleasepool {
 		Fraction *myFraction = [[Fraction alloc] init];
 		
@@ -57,6 +59,27 @@ int main (int argc, const char * argv[]) {
 		NSLog(@"Using class method:");
 		Fraction *classAddition = [Fraction addFraction:aFraction toFraction:bFraction];
 		[classAddition display];
+	}
+	/* ======================== MIXEDNUM ======================== */
+	@autoreleasepool {
+		NSLog(@"\n");
+		//	bFraction is declared previously (well, it isn't)
+		Fraction *bFraction = [[Fraction alloc] init];
+		[bFraction setNumerator:1 overDenominator:3];
+		
+		MixedNumber *aMixedNum = [[MixedNumber alloc] init];
+		MixedNumber *bMixedNum = [[MixedNumber alloc] init];
+		[aMixedNum setWholeNumber:3 andNumerator:2 overDenominator:4];
+		[bMixedNum setWholeNumber:4 andFraction:bFraction];
+		
+		NSLog(@"aMixedNum is"); [aMixedNum display];
+		//	Uses Fraction's reduce method on the fractional portion of MixedNumber
+		NSLog(@"After reducing, aMixedNum is"); [aMixedNum reduce]; [aMixedNum display];
+		
+		NSLog(@"Addition: ");
+		[aMixedNum display]; NSLog(@" 0 "); [bMixedNum display]; NSLog(@" = ");
+		[[MixedNumber addMixedNumber:aMixedNum toMixedNumber:bMixedNum] display];
+		//	display is invoked on the return value of the add method
 	}
 	return 0;
 }
