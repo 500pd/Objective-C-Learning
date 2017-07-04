@@ -77,7 +77,7 @@ int main (int argc, const char * argv[]) {
 		NSLog(@"After reducing, aMixedNum is"); [aMixedNum reduce]; [aMixedNum display];
 		
 		NSLog(@"Addition: ");
-		[aMixedNum display]; NSLog(@" 0 "); [bMixedNum display]; NSLog(@" = ");
+		[aMixedNum display]; NSLog(@" + "); [bMixedNum display]; NSLog(@" = ");
 		[[MixedNumber addMixedNumber:aMixedNum toMixedNumber:bMixedNum] display];
 		//	display is invoked on the return value of the add method
 	}

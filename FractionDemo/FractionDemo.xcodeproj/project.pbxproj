@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8E028A991F0A7FAE00FDBC01 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E028A971F0A7FAE00FDBC01 /* Fraction.m */; };
 		8E028A9A1F0A7FAE00FDBC01 /* FractionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E028A981F0A7FAE00FDBC01 /* FractionDemo.m */; };
+		8E028A9D1F0AD29200FDBC01 /* MixedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E028A9C1F0AD29200FDBC01 /* MixedNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		8E028A961F0A7FAE00FDBC01 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		8E028A971F0A7FAE00FDBC01 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		8E028A981F0A7FAE00FDBC01 /* FractionDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FractionDemo.m; sourceTree = "<group>"; };
+		8E028A9B1F0AD29200FDBC01 /* MixedNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixedNumber.h; sourceTree = "<group>"; };
+		8E028A9C1F0AD29200FDBC01 /* MixedNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixedNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				8E028A961F0A7FAE00FDBC01 /* Fraction.h */,
+				8E028A9B1F0AD29200FDBC01 /* MixedNumber.h */,
+				8E028A9C1F0AD29200FDBC01 /* MixedNumber.m */,
 				8E028A971F0A7FAE00FDBC01 /* Fraction.m */,
 				8E028A981F0A7FAE00FDBC01 /* FractionDemo.m */,
 			);
@@ -127,6 +132,7 @@
 			files = (
 				8E028A9A1F0A7FAE00FDBC01 /* FractionDemo.m in Sources */,
 				8E028A991F0A7FAE00FDBC01 /* Fraction.m in Sources */,
+				8E028A9D1F0AD29200FDBC01 /* MixedNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
